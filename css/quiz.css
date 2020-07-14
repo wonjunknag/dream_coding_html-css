@@ -21,14 +21,16 @@ body {
 }
 .container {
   display: flex;
+  height: 100vh;
 }
 .main {
   display: flex;
-  height: 78vh;
+  flex: 3;
 }
 
 .aside {
-  width: 100%;
+  flex: 1;
+  padding-bottom: 100px;
   padding-right: 30px;
   background-color: yellow;
 }

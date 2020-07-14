@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 15px;
+}
+
+.navbar__left-logo span:first-child {
+  color: red;
+}
+
+.navbar__right-options span > a {
+  color: white;
+}
+
+.video-youtube {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.video-youtube-iframe {
+  width: 100%;
+  height: 60vh;
+}
+
+.main {
+  display: flex;
+  padding-left: 20px;
+  height: 100vh;
+}
+
+.main__video-content {
+  flex: 2;
+  padding-right: 15px;
+}
+
+.video-content__hashtags {
+  padding-top: 15px;
+}
+
+.video-content__hashtags-items {
+  margin-right: 7px;
+}
+
+.video-content__content {
+  padding: 15px 0;
+  padding-right: 60px;
+}
+
+.video-content__content-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-contnet_content-footer {
+  padding-top: 5px;
+}
+
+.content-footer {
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+
+.video-content__icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  opacity: 0.5;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(211, 207, 207);
+}
+
+.video-content__icons-items {
+  text-align: center;
+}
+
+.video-content__icons-items:hover {
+  color: blue;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.video-content__icons-items span {
+  display: block;
+}
+
+.video-content__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.video-content__footer-left {
+  display: flex;
+  align-items: flex-start;
+}
+.video-content__footer-left-right {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.video-content__footer-left img {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.main__video-links {
+  flex: 1;
+  padding: 15px 0;
+}
+
+.video-links-title {
+  opacity: 0.5;
+  padding-bottom: 15px;
+}
+
+.main__video-links__items {
+  display: flex;
+  padding: 20px 0;
+}
+
+.content-contnet {
+  font-size: 0.8rem;
+}
+
+.links-content-img {
+  padding-right: 20px;
+}
+
+.links.content-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .main__video-links {
+    flex: 1;
+  }
+  .main__video-content {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    flex-direction: column;
+  }
+}
